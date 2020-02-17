@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./layout/navbar'); -%>
+
+<body>
+  
+  <div class="sidebar1">
+      <ul>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-book"></i></span>
+          <span class="title">Dashboard</span></a></li>
+        <li><a href="#" class="">
+          <span class="icon"><i class="fas fa-blog"></i></span>
+          <span class="title">Inventory</span>
+          </a></li>
+    </ul>
+  </div>
+
+  
+  <div class="main_container">
+    <div class="item">
+        <div class="box">
+            <h3 class="text-center">Inventory</h3>
+            <form action="http://localhost:3000/inventory/store" method="POST" class="form-group">
+                  
+                  <label for="" class="mt-3">Nama Barang</label>
+                  <input type="text" name="nama_brg" class="form-control form-invent">
+
+                  <label for="" class="mt-3">Deksripsi Barang</label>
+                  <input type="text" name="deskripsi_brg" class="form-control form-invent">
+
+                  <label for="" class="mt-3">Harga Barang</label>
+                  <input type="text" name="harga_brg" class="form-control form-invent">
+                  <button type="submit" class="btn btn-primary mt-3">SUBMIT</button>
+            </form>
+
+        </div>
+    </div>
+  </div>
+</div>
+	
+</body>
+    
+</html>
